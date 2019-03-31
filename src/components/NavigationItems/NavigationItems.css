@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+.navitems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navitem {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto Condensed';
+}
+
+@media all and (max-width: 800px) {
+    .navitems {
+        display: none;
+    }
+}

@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+.container {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 2%;
+    width: 96%;
+    height: 100%;
+    background-repeat: repeat;    
+}
+
+.pattern1 {
+    background-image: url("../../../assets/pattern1.png");
+}
+
+.pattern2 {
+    background-image: url("../../../assets/pattern2.png");
+}
+
+.pattern3 {
+    background-image: url("../../../assets/pattern3.png");
+}
+
+.pattern4 {
+    background-image: url("../../../assets/pattern4.png");
+}
+
+.pattern5 {
+    background-image: url("../../../assets/pattern5.png");
+}
+
+.pattern6 {
+    background-image: url("../../../assets/pattern5.png");
+}
+
+.overlay1 {
+    background-color: #22242E;
+    background-blend-mode: overlay;
+}
+
+.overlay2 {
+    background-color: #C2332B;
+    background-blend-mode: overlay;
+}
+
+@keyframes carousel
+{
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes carousel /* Prefix for Safari and Chrome */
+{
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.animation {
+    animation-name: carousel;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    -webkit-animation-name: carousel;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 5s;
+}
+
+.normal-direction {
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+}
+
+.reverse-direction {
+    animation-direction: reverse;
+    -webkit-animation-direction: reverse;
+}

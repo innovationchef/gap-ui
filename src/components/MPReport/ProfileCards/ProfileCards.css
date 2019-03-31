@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    flex-basis: 20%;
+    align-self: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

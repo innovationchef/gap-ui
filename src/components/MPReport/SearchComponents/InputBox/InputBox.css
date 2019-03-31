@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.input-box {
+    display: block;
+    height: 40px;
+    width: 300px;
+    background-color: white;
+    border: none;
+    color: rgb(96, 96, 112);
+    text-decoration: none;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.input-box:hover {
+    background-color: lightgray;
+}

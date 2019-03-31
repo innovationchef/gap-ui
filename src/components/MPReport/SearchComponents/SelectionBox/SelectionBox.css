@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    clear: both;
+}
+
+.button {
+    display: block;
+    height: 40px;
+    width: 300px;
+    background-color: white;
+    border: none;
+    color: rgb(96, 96, 112);
+    text-decoration: none;
+}
+
+.button::after {
+    font-family: FontAwesome;
+    content: "\f0ab";
+    float: right;
+    padding-right: 10px;
+}
+
+.button > p {
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    content: "";
+    float: left;
+    padding-left: 10px;
+}
+
+.button:hover {
+    background-color: lightgray;
+}
+
+.button-active::after {
+    font-family: FontAwesome;
+    content: "\f0aa";
+    float: right;
+    padding-right: 10px;
+}

@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    border: solid black 1px;
+    border-top: solid #C2332B 4px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    transition: all .2s ease-in-out; 
+}
+
+.profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding:1px;
+    border:1px solid #021a40;
+    background-color: antiquewhite;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: lightgray;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+}
+
+.container:hover .overlay {
+    opacity: 0.3;
+}
+
+.description {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: #C2332B solid 2px;
+}
+
+.content {
+    flex-basis: 70%;
+}
+
+.logo {
+    flex-basis: 30%;
+}
+
+.description > content > h2 {
+    font-family: 'Roboto Condensed';
+    padding-bottom: 10px;
+    color: #C2332B;
+}
+
+.party-logo {
+    height: 30%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #C2332B;
+    text-align: end;
+    padding-right: 5px;
+    padding-top: 3px;
+}
